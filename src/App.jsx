@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import HajjUmrah from './pages/HajjUmrah'
+import Hotels from './pages/Hotels'
+import Cruises from './pages/Cruises'
 import EnquiryModal from './components/EnquiryModal'
 import './App.css'
 
@@ -22,6 +24,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home onEnquire={openModal} />} />
           <Route path="/hajj-umrah" element={<HajjUmrah onEnquire={openModal} />} />
+          <Route path="/hotels" element={<Hotels onEnquire={openModal} />} />
+          <Route path="/cruises" element={<Cruises onEnquire={openModal} />} />
         </Routes>
         {modalOpen && (
           <EnquiryModal

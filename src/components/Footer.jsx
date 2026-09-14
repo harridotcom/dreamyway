@@ -72,7 +72,9 @@ export default function Footer({ onEnquire }) {
       <div className="container">
         <div className="footer__top">
           <div>
-            <img src="/logo.png" alt="Dreamway Key" className="footer__logo" />
+            <div className="footer__logo-wrap">
+              <img src="/logo.png" alt="Dreamway Key" className="footer__logo" />
+            </div>
             <p className="footer__tagline">
               Your trusted travel partner since 2009. We craft journeys that become
               stories worth telling — from the UAE and beyond.

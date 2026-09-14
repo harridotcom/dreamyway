@@ -3,11 +3,11 @@ import { Link, useLocation } from 'react-router-dom'
 
 const links = [
   { label: 'Flights', href: '/#search' },
-  { label: 'Hotels', href: '/#search' },
+  { label: 'Hotels', href: '/hotels', isRoute: true },
   { label: 'Tour Packages', href: '/#packages' },
   { label: 'Destinations', href: '/#destinations' },
   { label: 'Visa Services', href: '/#visa' },
-  { label: 'Cruises', href: '/#services' },
+  { label: 'Cruises', href: '/cruises', isRoute: true },
   { label: 'Hajj & Umrah', href: '/hajj-umrah', isRoute: true },
 ]
 
